@@ -1,4 +1,5 @@
 <template>
+    <Navigation></Navigation>
     <div class="home">
         <section class="hero">
             <div class="hero-text container">
@@ -19,7 +20,6 @@
 <script>
 export default {
     name: "Main",
-    components: {},
 };
 </script>
 
