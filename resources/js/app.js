@@ -1,6 +1,8 @@
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
 import Navigation from './Pages/navigation.vue';
+import { Link } from '@inertiajs/vue3'
+import './/index.css'
 
 createInertiaApp({
   resolve: name => {

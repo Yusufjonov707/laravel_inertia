@@ -8,14 +8,13 @@
     @inertiaHead
 </head>
     <Navigation></Navigation>
-    @inertia    
+    @inertia
 <script>
     export default {
         name: "App",
     }
 </script>
 <style>
-    @import url("http://fonts.googleapis.com/css?family=Raleway:wght@400;500&display=swap");
 
     * {
         padding: 0;

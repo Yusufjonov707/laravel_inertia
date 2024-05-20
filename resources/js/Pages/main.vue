@@ -1,16 +1,21 @@
 <template>
-    <Navigation></Navigation>
     <div class="home">
+        <Navigation></Navigation>
         <section class="hero">
             <div class="hero-text container">
                 <div class="hero-content">
-                    <h4>Vue Responsive Nav menu</h4>
-                    <hr />
-                    <h2>
-                        With Vue <br />
-                        Anmimations
-                    </h2>
-                    <hr />
+                    <h2>Korxona va tashkilotlar, tovar belgilari <br>to'g'risidagi ma'lumotlar</h2>
+
+                    <h5>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A cum pariatur aspernatur beatae nisi veniam?
+                    </h5>
+                    <div class="input-section mt-5">
+                        <select name="type" id="">
+                            <option value="">Search type</option>
+                        </select>
+                        <input type="text">
+                        <button>Hello</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -28,7 +33,7 @@ export default {
     background-image: url("/images/hero-bg.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover; /* This will ensure the image covers the entire element */
+    background-size: 100% 100%;
     background-position: center;
     position: relative;
     height: 100vh;
@@ -38,37 +43,29 @@ export default {
         height: 100%;
         width: 100%;
     }
-
+    .hero-content{
+        top: -17vh;
+        width: 75%;
+        margin: auto;
+    }
     .hero-text {
+        text-align: center;
         height: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         color: #fff;
 
-        h4 {
-            text-transform: uppercase;
-            font-size: 22px;
-            padding-bottom: 4px;
-        }
-
         h2 {
-            font-size: 50px;
+            font-size: 30px;
             @media (min-width: 550px) {
-                font-size: 80px;
+                font-size: 40px;
             }
+            font-weight: 700;
         }
-
-        hr:nth-child(2) {
-            max-width: 365px;
-            margin-bottom: 16px;
-        }
-        hr:nth-child(4) {
-            height: 6px;
-            background-color: #fff;
-            border: none;
-            max-width: 85px;
-            margin-top: 16px;
+        h5{
+            color: #ffffff86;
+            margin-top: 20px;
         }
     }
 }
@@ -79,12 +76,12 @@ export default {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
 .hero-content {
     position: relative;
-    z-index: 2; /* Ensures the content appears above the overlay */
+    z-index: 2;
 }
 </style>
